@@ -1,0 +1,18 @@
+@import '_variables.scss';
+
+
+.navbar{
+    background-color: $navbar-bg;
+}
+.login-container{
+    margin-top:12rem;
+}
+.register-container{
+    margin-top:12rem;
+}
+.register-btn{
+background-color:$navbar-bg;
+}
+.login-btn{
+    background-color:$navbar-bg;
+    }
