@@ -1,0 +1,31 @@
+body {
+  margin-top: 125px;
+}
+
+body {
+  margin-top: 125px !important;
+}
+
+.navbar {
+  background-color: #ffd8cf;
+}
+
+.login-container {
+  margin-top: 12rem;
+}
+
+.register-container {
+  margin-top: 12rem;
+}
+
+.register-btn {
+  background-color: #ffd8cf;
+}
+
+.login-btn {
+  background-color: #ffd8cf;
+}
+
+.card {
+  width: 80%;
+}/*# sourceMappingURL=main.css.map */

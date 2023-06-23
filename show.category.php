@@ -1,24 +1,31 @@
 <?php
 require_once "partials/head.php";
 ?>
-<?php require_once "partials/navbar.php"; ?>
-<?php
-require_once "functions.php";
-?>
-<?php $books = getAll(); ?>
 
+<?php require_once "partials/navbar.php"; ?>
+<?php require_once "functions.php"; ?>
+
+<?php
+$books = getCategory($_GET['cat']);
+
+?>
+<?php require_once "partials/footer.php"; ?>
 
 
 <div class="container adds-container">
     <div class="row">
 
         <div class="col-lg-10 text-center">
-            <h1> All Books adds</h1>
+            <h1> All Books from this category</h1>
 
 
         </div>
     </div>
 </div>
+
+
+
+
 <div class="container">
 
     <div class="row">
@@ -58,4 +65,3 @@ require_once "functions.php";
     </div>
 
 </div>
-<?php require_once "partials/footer.php"; ?>

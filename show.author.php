@@ -1,24 +1,32 @@
 <?php
 require_once "partials/head.php";
 ?>
-<?php require_once "partials/navbar.php"; ?>
-<?php
-require_once "functions.php";
-?>
-<?php $books = getAll(); ?>
 
+<?php require_once "partials/navbar.php"; ?>
+<?php require_once "functions.php"; ?>
+
+<?php
+$books = getAuthor($_GET['aut']);
+
+
+?>
+<?php require_once "partials/footer.php"; ?>
 
 
 <div class="container adds-container">
     <div class="row">
 
         <div class="col-lg-10 text-center">
-            <h1> All Books adds</h1>
+            <h1> All Books from this author</h1>
 
 
         </div>
     </div>
 </div>
+
+
+
+
 <div class="container">
 
     <div class="row">
@@ -31,7 +39,7 @@ require_once "functions.php";
 
                         <h2 class="card-title book-title"> <?php echo $book['title']; ?></h2>
 
-                        <span>writen by:</span><a href="show.author.php?aut=<?php echo $book['author']; ?>">
+                        <span>writen by:</span><a href="">
                             <h5 class="card-text book-author"> <?php echo $book['author']; ?> </h5>
                         </a>
                     </div>
@@ -58,4 +66,3 @@ require_once "functions.php";
     </div>
 
 </div>
-<?php require_once "partials/footer.php"; ?>
